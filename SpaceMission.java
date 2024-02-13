@@ -68,7 +68,7 @@ public class SpaceMission {
     }
 
     public static void main(String[] args) {
-        int[] engines = {3, 4, 5, 2}; // Engine build times
+        int[] engines = {1,2,3}; // Engine build times
         int split = 2; // Time cost to split one engineer into two
         System.out.println("Minimum time needed to build all engines: " + minTimeToBuildEngines(engines, split));
     }

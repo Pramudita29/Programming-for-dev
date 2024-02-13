@@ -28,21 +28,21 @@ public class ClothingFactoryManager {
         }
 
         int target = totalDresses / n;
-        int maxDiff = 0;
+        int moves = 0;
         int cumulativeDiff = 0;
 
         // Calculate the minimum number of moves required
         for (int dresses : machines) {
             int diff = dresses - target; // Difference from the target
             cumulativeDiff += diff; // Cumulative difference
-            maxDiff = Math.max(maxDiff, Math.abs(cumulativeDiff)); // Maximum adjustment needed
+            moves += Math.abs(cumulativeDiff);
         }
 
-        return maxDiff;
+        return moves/2;
     }
 
     public static void main(String[] args) {
-        int[] machines = {2, 1, 3, 0, 2};
+        int[] machines = {1, 0, 5};
         System.out.println("Minimum number of moves required: " + minMovesToEqualize(machines));
     }
 }
