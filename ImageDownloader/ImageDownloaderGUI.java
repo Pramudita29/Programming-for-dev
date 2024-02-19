@@ -6,7 +6,7 @@ public class ImageDownloaderGUI extends JFrame {
 
     public ImageDownloaderGUI() {
         downloadController = new DownloadController(this); // Initialize the download controller
-        setTitle("Advanced Image Downloader"); // Set window title
+        setTitle("Image Downloader"); // Set window title
         setSize(600, 400); // Set window size
         setDefaultCloseOperation(EXIT_ON_CLOSE); // Set default close operation
         initComponents(); // Initialize components

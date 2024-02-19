@@ -133,9 +133,7 @@ class AntColonyOptimization {
         double[][] distance = {
                 {0, 2, 3, 4, 5},
                 {2, 0, 4, 5, 6},
-                {3, 4, 0, 6, 7},
-                {4, 5, 6, 0, 8},
-                {5, 6, 7, 8, 0}
+                {3, 4, 0, 6, 7}
         };
         AntColonyOptimization aco = new AntColonyOptimization(distance);
         aco.solve();
